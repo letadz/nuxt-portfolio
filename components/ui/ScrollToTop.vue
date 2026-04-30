@@ -2,7 +2,7 @@
 const { y: scrollY } = useWindowScroll()
 const isVisible = computed(() => scrollY.value > 300)
 
-function scrollToTop() {
+const scrollToTop = () => {
   window.scrollTo({ top: 0, behavior: 'smooth' })
 }
 </script>

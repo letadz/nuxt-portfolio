@@ -36,7 +36,7 @@ const contactLinks = [
     <div
       class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
              w-[600px] h-[400px] rounded-full
-             bg-gradient-to-r from-violet-500/10 to-cyan-500/10 blur-3xl pointer-events-none"
+             bg-linear-to-r from-violet-500/10 to-cyan-500/10 blur-3xl pointer-events-none"
     />
 
     <div class="section-container relative z-10">
@@ -48,7 +48,7 @@ const contactLinks = [
         <h2 class="section-title text-slate-900 dark:text-white">
           Get In <span class="gradient-text">Touch</span>
         </h2>
-        <div class="mx-auto mt-4 h-1 w-16 rounded-full bg-gradient-to-r from-violet-500 to-cyan-500" />
+        <div class="mx-auto mt-4 h-1 w-16 rounded-full bg-linear-to-r from-violet-500 to-cyan-500" />
       </div>
 
       <!-- Contact card -->
@@ -57,24 +57,24 @@ const contactLinks = [
       >
         <div
           class="relative overflow-hidden rounded-3xl p-8 sm:p-12
-                 bg-gradient-to-br from-violet-600/10 via-purple-600/5 to-cyan-500/10 dark:from-violet-600/20 dark:via-purple-600/10 dark:to-cyan-500/20
+                 bg-linear-to-br from-violet-600/10 via-purple-600/5 to-cyan-500/10 dark:from-violet-600/20 dark:via-purple-600/10 dark:to-cyan-500/20
                  border border-violet-200 dark:border-violet-500/20
                  shadow-xl shadow-violet-500/10"
         >
           <!-- Corner decoration -->
           <div
             class="absolute -top-12 -right-12 w-40 h-40 rounded-full
-                   bg-gradient-to-br from-violet-500/20 to-cyan-500/10 blur-2xl"
+                   bg-linear-to-br from-violet-500/20 to-cyan-500/10 blur-2xl"
           />
           <div
             class="absolute -bottom-12 -left-12 w-40 h-40 rounded-full
-                   bg-gradient-to-br from-cyan-500/10 to-violet-500/20 blur-2xl"
+                   bg-linear-to-br from-cyan-500/10 to-violet-500/20 blur-2xl"
           />
 
           <div class="relative z-10 text-center mb-10">
             <div
               class="w-16 h-16 mx-auto mb-5 rounded-2xl
-                     bg-gradient-to-br from-violet-600 to-cyan-500
+                     bg-linear-to-br from-violet-600 to-cyan-500
                      flex items-center justify-center shadow-lg shadow-violet-500/30"
             >
               <Icon name="heroicons:paper-airplane-20-solid" class="w-8 h-8 text-white" />
@@ -105,7 +105,7 @@ const contactLinks = [
                      transition-all duration-300 text-center"
             >
               <div
-                class="w-12 h-12 rounded-xl bg-gradient-to-br flex items-center justify-center
+                class="w-12 h-12 rounded-xl bg-linear-to-br flex items-center justify-center
                        shadow-md shrink-0 group-hover:scale-110 transition-transform duration-200"
                 :class="link.gradient"
               >
@@ -124,7 +124,7 @@ const contactLinks = [
 
           <!-- Bottom nudge -->
           <p class="relative z-10 text-center mt-8 text-xs text-slate-400 dark:text-slate-600">
-            Typically reply within 24 hours ⚡
+            Typically reply within 24 hours.
           </p>
         </div>
       </div>

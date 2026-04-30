@@ -9,7 +9,6 @@ interface Props {
     category: string
     gradient: string
     image?: string
-    badge?: string
   }
 }
 
@@ -49,15 +48,6 @@ defineProps<Props>()
       <!-- Overlay on hover -->
       <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300" />
 
-      <!-- Real-world badge (if any) -->
-      <span
-        v-if="project.badge"
-        class="absolute top-3 left-3 px-2.5 py-0.5 rounded-full text-xs font-semibold
-               bg-violet-600 text-white shadow-md"
-      >
-        {{ project.badge }}
-      </span>
-
       <!-- Category chip -->
       <span
         class="absolute top-3 right-3 px-2.5 py-0.5 rounded-full text-xs font-semibold
@@ -95,7 +85,7 @@ defineProps<Props>()
       </div>
 
       <!-- Links -->
-      <div class="flex items-center gap-3 pt-3 border-t border-slate-100 dark:border-white/10">
+      <div class="flex items-center gap-4 pt-3 border-t border-slate-100 dark:border-white/10">
         <a
           v-if="project.liveUrl"
           :href="project.liveUrl"

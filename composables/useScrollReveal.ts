@@ -3,7 +3,7 @@
  * with the `.reveal` class. Elements are visible by default;
  * JS adds `.will-animate` first, then `.visible` on intersection.
  */
-export function useScrollReveal() {
+export const useScrollReveal = () => {
   onMounted(() => {
     const elements = document.querySelectorAll('.reveal')
 

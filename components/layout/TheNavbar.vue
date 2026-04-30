@@ -11,7 +11,7 @@ const navLinks = [
   { label: 'Contact', href: '#contact' },
 ]
 
-function scrollTo(href: string) {
+const scrollTo = (href: string) => {
   isMobileMenuOpen.value = false
   if (import.meta.client) {
     const el = document.querySelector(href)
@@ -41,14 +41,14 @@ onMounted(() => {
         @click="scrollTo('#hero')"
       >
         <img
-          src="/logo.svg"
+          src="/logo.webp"
           alt="Mark Angelo logo"
           class="w-9 h-9 group-hover:scale-105 transition-transform duration-200"
           style="filter: drop-shadow(0 4px 8px rgba(139,92,246,0.4));"
         />
-        <span class="font-display font-bold text-slate-800 dark:text-white hidden sm:block">
+        <!-- <span class="font-display font-bold text-slate-800 dark:text-white hidden sm:block">
           Mark Angelo
-        </span>
+        </span> -->
       </button>
 
       <!-- Desktop nav -->

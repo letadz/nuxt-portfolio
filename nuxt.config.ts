@@ -56,7 +56,7 @@ export default defineNuxtConfig({
         { property: 'og:type', content: 'website' },
         { name: 'twitter:card', content: 'summary_large_image' },
       ],
-      link: [{ rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' }],
+      link: [{ rel: 'icon', type: 'image/svg+xml', href: '/logo.webp' }],
     },
     pageTransition: { name: 'page', mode: 'out-in' },
   },

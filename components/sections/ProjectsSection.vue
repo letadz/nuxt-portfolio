@@ -3,14 +3,13 @@ const allProjects = [
   {
     title: 'TraxionPay',
     description:
-      'Real-world fintech platform — a digital payment and financial services web app. Contributed to the front-end development of core user-facing features and UI components.',
+      'Fintech platform — a digital payment and financial services web app. Contributed to the front-end development of core user-facing features and UI components.',
     tech: ['Vue.js', 'Nuxt.js', 'Tailwind CSS', 'REST API'],
     category: 'Vue',
-    image: 'https://traxionpay.com/wp-content/uploads/2022/09/traxionpay-og.png',
-    gradient: 'bg-gradient-to-br from-blue-600 to-indigo-800',
-    liveUrl: 'https://traxionpay.com',
+    image: '/image/project/traxionpay.webp',
+    gradient: 'bg-linear-to-br from-blue-600 to-indigo-800',
+    liveUrl: '',
     githubUrl: '',
-    badge: '💼 Real World',
   },
   {
     title: 'Ecommerce Platform',
@@ -19,8 +18,8 @@ const allProjects = [
     tech: ['Vue.js', 'Nuxt.js', 'Pinia', 'TailwindCSS', 'Firebase'],
     category: 'Vue',
     image: 'https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=600&q=80&auto=format',
-    gradient: 'bg-gradient-to-br from-violet-600 to-purple-800',
-    liveUrl: '',
+    gradient: 'bg-linear-to-br from-violet-600 to-purple-800',
+    liveUrl: 'https://ecommerce-nuxt-lake.vercel.app/sign-in',
     githubUrl: 'https://github.com/letadz',
   },
   {
@@ -30,41 +29,8 @@ const allProjects = [
     tech: ['React', 'Tailwind CSS', 'Chart.js'],
     category: 'React',
     image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=80&auto=format',
-    gradient: 'bg-gradient-to-br from-cyan-500 to-blue-700',
-    liveUrl: '',
-    githubUrl: 'https://github.com/letadz',
-  },
-  {
-    title: 'Letadz Bootcamp',
-    description:
-      'Landing page for a web development bootcamp. Features animated sections, course highlights, testimonials, and a signup CTA.',
-    tech: ['HTML', 'CSS', 'JavaScript'],
-    category: 'Other',
-    image: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600&q=80&auto=format',
-    gradient: 'bg-gradient-to-br from-emerald-500 to-teal-700',
-    liveUrl: '',
-    githubUrl: 'https://github.com/letadz',
-  },
-  {
-    title: "Mag's Auto Repair",
-    description:
-      'A business landing page for an auto repair shop. MERN stack with a modern UI, service listings, and a contact form.',
-    tech: ['MongoDB', 'Express', 'React', 'Node.js', 'TailwindCSS'],
-    category: 'React',
-    image: 'https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=600&q=80&auto=format',
-    gradient: 'bg-gradient-to-br from-amber-500 to-orange-700',
-    liveUrl: '',
-    githubUrl: 'https://github.com/letadz',
-  },
-  {
-    title: 'Car Service Booking',
-    description:
-      'A full CRUD booking system for car service appointments with real-time updates, filtering by date/service, and Redux state management.',
-    tech: ['React', 'TailwindCSS', 'Redux', 'REST API'],
-    category: 'React',
-    image: 'https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=600&q=80&auto=format',
-    gradient: 'bg-gradient-to-br from-rose-500 to-pink-700',
-    liveUrl: '',
+    gradient: 'bg-linear-to-br from-cyan-500 to-blue-700',
+    liveUrl: 'https://letadz-dashboard.vercel.app/',
     githubUrl: 'https://github.com/letadz',
   },
   {
@@ -74,7 +40,7 @@ const allProjects = [
     tech: ['React', 'TailwindCSS', 'Redux'],
     category: 'React',
     image: 'https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=600&q=80&auto=format',
-    gradient: 'bg-gradient-to-br from-indigo-500 to-violet-700',
+    gradient: 'bg-linear-to-br from-indigo-500 to-violet-700',
     liveUrl: '',
     githubUrl: 'https://github.com/letadz',
   },
@@ -96,7 +62,7 @@ const visibleProjects = computed(() => {
   return filteredProjects.value.slice(0, 3)
 })
 
-function setFilter(f: string) {
+const setFilter = (f: string) => {
   activeFilter.value = f
   showAll.value = false
 }
@@ -122,7 +88,7 @@ function setFilter(f: string) {
         <h2 class="section-title text-slate-900 dark:text-white">
           Featured <span class="gradient-text">Projects</span>
         </h2>
-        <div class="mx-auto mt-4 h-1 w-16 rounded-full bg-gradient-to-r from-violet-500 to-cyan-500" />
+        <div class="mx-auto mt-4 h-1 w-16 rounded-full bg-linear-to-r from-violet-500 to-cyan-500" />
         <p class="mt-5 text-slate-600 dark:text-slate-400 max-w-xl mx-auto">
           A selection of projects that showcase my skills across different domains and tech stacks.
         </p>

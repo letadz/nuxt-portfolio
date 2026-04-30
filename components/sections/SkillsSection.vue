@@ -66,7 +66,7 @@ const skillGroups = [
         <h2 class="section-title text-slate-900 dark:text-white">
           Skills &amp; <span class="gradient-text">Technologies</span>
         </h2>
-        <div class="mx-auto mt-4 h-1 w-16 rounded-full bg-gradient-to-r from-violet-500 to-cyan-500" />
+        <div class="mx-auto mt-4 h-1 w-16 rounded-full bg-linear-to-r from-violet-500 to-cyan-500" />
         <p class="mt-5 text-slate-600 dark:text-slate-400 max-w-xl mx-auto">
           A curated toolkit of languages, frameworks, and tools I use to build modern web
           experiences.
@@ -84,7 +84,7 @@ const skillGroups = [
           <!-- Group header -->
           <div class="mb-4 flex items-center gap-3">
             <div
-              class="w-9 h-9 rounded-xl bg-gradient-to-br flex items-center justify-center
+              class="w-9 h-9 rounded-xl bg-linear-to-br flex items-center justify-center
                      shadow-md shrink-0"
               :class="group.color"
             >
