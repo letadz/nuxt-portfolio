@@ -12,6 +12,17 @@ const allProjects = [
     githubUrl: '',
   },
   {
+    title: 'AutoGlow Detailing',
+    description:
+      'A luxury automotive website featuring service sections, before-and-after showcase, customer testimonials, gallery, and appointment booking.',
+    tech: ['Vue.js', 'Nuxt.js', 'TailwindCSS', 'PhotoSwipe'],
+    category: 'Vue',
+    image: '/image/project/autoglow.webp',
+    gradient: 'bg-linear-to-br from-indigo-500 to-violet-700',
+    liveUrl: 'https://letadz-autoglow.vercel.app/',
+    githubUrl: 'https://github.com/letadz',
+  },
+  {
     title: 'Ecommerce Platform',
     description:
       'A full-featured ecommerce web app with product listings, cart management, authentication, and real-time database. Built with a modern JAMstack approach.',
@@ -31,17 +42,6 @@ const allProjects = [
     image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=80&auto=format',
     gradient: 'bg-linear-to-br from-cyan-500 to-blue-700',
     liveUrl: 'https://letadz-dashboard.vercel.app/',
-    githubUrl: 'https://github.com/letadz',
-  },
-  {
-    title: 'Todo App',
-    description:
-      'A feature-rich todo application with task categories, priorities, drag-and-drop reordering, and persistent state via Redux.',
-    tech: ['React', 'TailwindCSS', 'Redux'],
-    category: 'React',
-    image: 'https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=600&q=80&auto=format',
-    gradient: 'bg-linear-to-br from-indigo-500 to-violet-700',
-    liveUrl: '',
     githubUrl: 'https://github.com/letadz',
   },
 ]
@@ -75,30 +75,34 @@ const setFilter = (f: string) => {
   >
     <!-- Glow -->
     <div
-      class="absolute top-1/2 right-0 w-96 h-96 rounded-full
-             bg-violet-500/5 dark:bg-violet-500/10 blur-3xl pointer-events-none"
+      class="absolute top-1/2 right-0 w-96 h-96 rounded-full bg-violet-500/5 dark:bg-violet-500/10 blur-3xl pointer-events-none"
     />
 
     <div class="section-container relative z-10">
       <!-- Heading -->
       <div class="text-center mb-12 reveal">
-        <p class="text-sm font-semibold uppercase tracking-widest text-violet-500 dark:text-violet-400 mb-3">
+        <p
+          class="text-sm font-semibold uppercase tracking-widest text-violet-500 dark:text-violet-400 mb-3"
+        >
           What I've built
         </p>
         <h2 class="section-title text-slate-900 dark:text-white">
-          Featured <span class="gradient-text">Projects</span>
+          Featured
+          <span class="gradient-text">Projects</span>
         </h2>
-        <div class="mx-auto mt-4 h-1 w-16 rounded-full bg-linear-to-r from-violet-500 to-cyan-500" />
+        <div
+          class="mx-auto mt-4 h-1 w-16 rounded-full bg-linear-to-r from-violet-500 to-cyan-500"
+        />
         <p class="mt-5 text-slate-600 dark:text-slate-400 max-w-xl mx-auto">
-          A selection of projects that showcase my skills across different domains and tech stacks.
+          A selection of projects that showcase my skills across different
+          domains and tech stacks.
         </p>
       </div>
 
       <!-- Filter tabs -->
       <div class="flex justify-center mb-10 reveal reveal-delay-1">
         <div
-          class="inline-flex p-1 rounded-xl bg-slate-200 dark:bg-navy-800
-                 border border-slate-300 dark:border-white/10 gap-1"
+          class="inline-flex p-1 rounded-xl bg-slate-200 dark:bg-navy-800 border border-slate-300 dark:border-white/10 gap-1"
         >
           <button
             v-for="filter in filters"
@@ -141,10 +145,16 @@ const setFilter = (f: string) => {
           @click="showAll = !showAll"
         >
           <Icon
-            :name="showAll ? 'heroicons:chevron-up-20-solid' : 'heroicons:chevron-down-20-solid'"
+            :name="
+              showAll
+                ? 'heroicons:chevron-up-20-solid'
+                : 'heroicons:chevron-down-20-solid'
+            "
             class="w-5 h-5"
           />
-          {{ showAll ? 'Show Less' : `Show ${filteredProjects.length - 3} More` }}
+          {{
+            showAll ? 'Show Less' : `Show ${filteredProjects.length - 3} More`
+          }}
         </button>
       </div>
 
@@ -153,7 +163,10 @@ const setFilter = (f: string) => {
         v-if="filteredProjects.length === 0"
         class="text-center py-16 text-slate-500 dark:text-slate-500"
       >
-        <Icon name="heroicons:face-frown-20-solid" class="w-12 h-12 mx-auto mb-3 opacity-40" />
+        <Icon
+          name="heroicons:face-frown-20-solid"
+          class="w-12 h-12 mx-auto mb-3 opacity-40"
+        />
         <p>No projects in this category yet.</p>
       </div>
     </div>
@@ -163,7 +176,9 @@ const setFilter = (f: string) => {
 <style scoped>
 .card-enter-active,
 .card-leave-active {
-  transition: opacity 0.3s ease, transform 0.3s ease;
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
 }
 .card-enter-from,
 .card-leave-to {
