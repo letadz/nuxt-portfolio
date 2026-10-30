@@ -22,13 +22,26 @@ const allProjects = [
     liveUrl: 'https://letadz-autoglow.vercel.app/',
     githubUrl: 'https://github.com/letadz',
   },
+
+  {
+    title: 'Isla Vespera Resort',
+    description:
+      'A luxury beachfront resort website featuring elegant room and suite listings, accommodation details, resort amenities, interactive gallery, exclusive offers, guest testimonials, and an online reservation request system.',
+    tech: ['Vue.js', 'Nuxt.js', 'TailwindCSS'],
+    category: 'Vue',
+    image: '/image/project/isla-vespera.webp',
+    gradient: 'bg-linear-to-br from-cyan-500 to-teal-700',
+    liveUrl: 'https://isla-vespera.vercel.app/',
+    githubUrl: 'https://github.com/letadz',
+  },
   {
     title: 'Ecommerce Platform',
     description:
       'A full-featured ecommerce web app with product listings, cart management, authentication, and real-time database. Built with a modern JAMstack approach.',
     tech: ['Vue.js', 'Nuxt.js', 'Pinia', 'TailwindCSS', 'Firebase'],
     category: 'Vue',
-    image: 'https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=600&q=80&auto=format',
+    image:
+      'https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=600&q=80&auto=format',
     gradient: 'bg-linear-to-br from-violet-600 to-purple-800',
     liveUrl: 'https://ecommerce-nuxt-lake.vercel.app/sign-in',
     githubUrl: 'https://github.com/letadz',
@@ -39,7 +52,8 @@ const allProjects = [
       'A responsive admin interface with data tables, charts, user management, and role-based access control. Clean and minimal design system.',
     tech: ['React', 'Tailwind CSS', 'Chart.js'],
     category: 'React',
-    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=80&auto=format',
+    image:
+      'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=80&auto=format',
     gradient: 'bg-linear-to-br from-cyan-500 to-blue-700',
     liveUrl: 'https://letadz-dashboard.vercel.app/',
     githubUrl: 'https://github.com/letadz',
